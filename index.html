@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mod name</title>
+  <title>UnStable</title>
   <script src="https://xemantic.github.io/shader-web-background/dist/shader-web-background.min.js"></script>
-  <!-- <script type="x-shader/x-fragment" id="image">
+  <script type="x-shader/x-fragment" id="image">
     precision mediump float;
     #define SPIN_EASE 0.8
     #define spin_time 5.
@@ -60,7 +60,7 @@
       // Output to screen
       gl_FragColor = (0.3/contrast)*colour_1 + (1. - 0.3/contrast)*(colour_1*c1p + colour_2*c2p + vec4(c3p*colour_3.rgb, c3p*colour_1.a));
     }
-  </script> -->
+  </script>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -85,102 +85,103 @@
   <div class="bg">
   </div>
   <main>
-    <h1>UnStable</h1>
+    <img src="img/logo.png" class="logo">
     <p>
-      Mod with a lot of new but vanilla-style mechanics.
-      <br>Contains new Jokers, consumables, and other stuff!
+      Inspired by <span class="attention">other card and board games</span>, both physical and digital alike.
+	  <br>
+	  <br>This mod brings a lot of <span class="attention">new, whacky content</span> and <span class="attention">mechanics</span> into Balatro that is
+	  <br>still fitting into <span class="attention">vanilla-type aesthetic and gameplay</span>!
     </p>
     <br>
     <h2>Download Link</h2>
     <br>
-    <a href="https://example.com" id="download">Download</a>
+    <a href="soon.html" id="download">Download</a>
+	<a href="instruction.html" id="download">How to Install</a>
     <br>
+	<br>
+	<br>
+	Please note that this mod is designed and balanced to be played as a <span class="attention">standalone mod</span>.
+	<br>It is <span class="attention">possible</span> to play it with other mods, however, but it is <span class="danger">not completely balanced</span> for it.
+	<br>
+	<br>If you are playing it with other mods, please get <a href="ex.html">UnStableEX</a> expansion as well for the <span class="attention">cross-mod compatibility</span>.
+	<br>If there is a future plan to add cross-mod content for fun, it will be added there as well.
     <br>
-    <div class="jokersfull">
-      <h2>Jokers</h2>
-      <br>
-      <div class="jokers cards">
-        
-      </div>
-      <br>
-    </div>
-    <div class="cardmodsfull">
-      <h2>Enhancements</h2>
-      <br>
-      <div class="cardmods cards">
-        
-      </div>
-      <br>
-    </div>
-	<div class="cardsealsfull">
-      <h2>Seal</h2>
-      <br>
-      <div class="cardseals cards">
-        
-      </div>
-      <br>
-    </div>
-  <div class="carddisenfull">
-      <h2>Unhancement</h2>
-      <br>
-      <div class="disench cards">
-        
-      </div>
-      <br>
-    </div>
-    <div class="auxiliaryfull">
-      <h2>Auxiliary Cards</h2>
-      <br>
-      New Consumable Type<br>
-      Use them directly inside the round for a chance to turn the tide around.
-      <br>
-      <br>
-      <div class="auxiliary cards">
-        
-      </div>
-      <br>
-    </div>
-    <div class="consumablesfull">
-      <h2>Other Consumables</h2>
-      <br>
-      <div class="consumables cards">
-        
-      </div>
-      <br>
-    </div>
-    <div class="decksfull">
-      <h2>Decks</h2>
-      <br>
-      <div class="decks cards">
-        
-      </div>
-      <br>
-    </div>
-    <div class="stickersfull">
-      <h2>stickers</h2>
-      <br>
-      <div class="stickers cards">
-        
-      </div>
-      <br>
-    </div>
-    <div class="blindsfull">
-      <h2>blinds</h2>
-      <br>
-      <div class="blinds cards">
-        
-      </div>
-      <br>
-    </div>
-    <div class="shopitemsfull">
-      <h2>Other Shop Items</h2>
-      <br>
-      <div class="shopitems cards">
-        
-      </div>
-      <br>
-    </div>
+	<br>
+    <h2>Features</h2>
+    <br>
+	<p>
+    - <span class="attention">75</span> New Jokers
+	<br>- <span class="attention">8</span> New Ranks to discover during the gameplay
+	<br>- New Consumable Type: <span class="attention">Auxiliary Card</span>
+	<br>- Suit and Face Seal
+	<br>- <span class="attention">5</span> new Enhancement
+	<br>- <span class="attention">3</span> new <span class="danger">Unhancement</span>: Enhancement that has <span class="danger">negative effects</span>
+	<br>- <span class="attention">5</span> Tarot and <span class="attention">9</span> Spectral Cards for supporting all <span class="attention">new features</span>
+    </p>
+	<br>
+	<h2>Decimal Ranks</h2>
+    <br>
+	<img src="img/screen_decimal.png">
+	<br>
+	<p>
+   <span class="attention"> Decimal ranks</span> can act as <span class="attention">different multiple ranks</span> in <span class="attention">Straight-based</span> hands.
+	<br>
+	<br>(Only <span class="danger">one rank at a time</span>, this means it is <span class="danger">not possible</span> to play
+	<br>two 0.5 rank cards in one hand and make one act as 0 and one as 1)
+    </p>
+	<br>
+	<h2>Auxiliary Card</h2>
+    <br>
+	<img src="img/screen_auxiliary.png">
+	<br>
+	<p>
+    <br>
+    A <span class="attention">new Consumable Type</span> focused mostly on new features.
+	<br>Grab them from the booster pack directly to your <span class="attention">consumable</span> area,
+	<br>and use them when <span class="attention">inside of the round</span> for a chance to turn the tide around you.
+	<br>
+	<br>It is generally powerful but <span class="danger">requires open consumable slot</span> to pick up.
+    <br>
+    </p>
+	<br>
+	<h2>Suit and Face Seals</h2>
+	<br>
+	<img src="img/screen_suitseal.png">
+    <br>
+	<p>
+    Cards with the <span class="attention">Suit Seal</span> can be considered as <span class="attention">multiple suits</span> at once.
+	<br>Cards with the <span class="attention">Face Seal</span> can be considered a <span class="attention">face card</span>.
+	<br>
+	<br><span class="danger">However, they are also affected by the Boss Blind
+	<br>effects as well, so use them with caution!</span>
+	<br>
+	<br>Note that this <span class="attention">does not grant any second triggers</span> if the card has the
+	<br>same suit as the suit seal, or if putting face seal on the face card.
+    </p>
+	<br>
+	<h2>Full Additions List</h2>
+	<p>
+    Please note that this may contains spoiler.
+    </p>
+    <br>
+    <a href="addition.html" id="download">View Full Additions</a>
+    <br>
+	<br>
+	<h2>Credits</h2>
+	<br>
+	<p>
+      <span class="inactive">UnStable Mod Concept:</span> <a href="https://bsky.app/profile/kirbio123.bsky.social">Kirbio</a> and <a href="https://bsky.app/profile/ramchops.bsky.social">RamChops Games</a>
+	  <br><span class="inactive">Programming, Art, and Music:</span> <a href="https://bsky.app/profile/kirbio123.bsky.social">Kirbio</a>
+	  <br><span class="inactive">Beta Tester:</span> <a href="https://bsky.app/profile/ramchops.bsky.social">RamChops Games</a>, <a href="https://bsky.app/profile/iesua-inane.bsky.social">Doremy</a>
+	  <br><span class="inactive">Proofreading:</span> <a href="https://www.youtube.com/@MechanizedDragonWorkshop">GizmoTheDragon</a>
+	  <br><br>Additional SFX from <a href="http://www.kurage-kosho.info/battle.html">Kurage Kosho</a> 
+	  <br><span class="inactive">Balatro Website Template:</span> <a href="https://github.com/notmario/balatrowebsitetemplate">notmario</a>
+	  <br>
+	  <br>A lot of code snippets are based on other existing <span class="attention">Balatro mods</span>.
+	  <br>(eg: <a href="https://github.com/Firch/Bunco">Bunco</a>, <a href="https://notmario.github.io/MoreFluff/">MoreFluff</a>,
+	  <a href="https://github.com/Eremel/Ortalab/releases">Ortalab</a>, etc.)
+	  <br>Please consider check them all out as well!
+    </p>
   </main>
-  <script src="addjokers.js" defer></script>
 </body>
 </html>

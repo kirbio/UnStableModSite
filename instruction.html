@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mod name</title>
+  <title>UnStable</title>
   <script src="https://xemantic.github.io/shader-web-background/dist/shader-web-background.min.js"></script>
-  <!-- <script type="x-shader/x-fragment" id="image">
+  <script type="x-shader/x-fragment" id="image">
     precision mediump float;
     #define SPIN_EASE 0.8
     #define spin_time 5.
@@ -60,7 +60,7 @@
       // Output to screen
       gl_FragColor = (0.3/contrast)*colour_1 + (1. - 0.3/contrast)*(colour_1*c1p + colour_2*c2p + vec4(c3p*colour_3.rgb, c3p*colour_1.a));
     }
-  </script> -->
+  </script>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -85,25 +85,36 @@
   <div class="bg">
   </div>
   <main>
-    <h1>mod name</h1>
+	<br>
+    <a href="index.html", id="download">Back to main page</a>
+    <br>
+	<br>
+    <h1>How to Install</h1>
+	<h2>(For both <span class="attention">UnStable</span> and <span class="attention">UnStableEX</span>)</h2>
+    <br>
     <p>
-      this is a mod that adds x, y, and z. <br>
-      it also adds foo and bar.
+      1. If you don't have <span class="attention">Steamodded</span>, please make sure to <span class="danger">install that first</span>.<br>Follow the guide <a href="https://github.com/Steamopollys/Steamodded/wiki">here</a>
+	  <br>
+	  <br>2. On the <span class="attention">mod's github page</span>, click the green <span class="attention">"Code" button</span>, and selects <span class="attention">"Download ZIP"</span> from the drop down.
+	  <br><br><img src="img/instruction_git.png">
+	  <br>
+	  <br>3. Save it onto your computer and extract the file.
+	  <br>
+	  <br>4. Navigate to your mod folder <span class="attention">(same as Steamodded)</span>
+	  <br>
+	  <br><span class="inactive">Windows:</span> %AppData%/Balatro/Mods
+	  <br><span class="inactive">Mac:</span> ~/Library/Application Support/Balatro/Mods
+	  <br><span class="inactive">Linux (WINE/Proton):</span> ~/.local/share/Steam/steamapps/compatdata/2379780/pfx/drive_c/users/steamuser/AppData/Roaming/Balatro/Mods
+	  <br>
+	  <br>5. Inside the <span class="attention">extracted zip file</span>, you should find a directory named <span class="attention">"balatro-unstable-main"</span>.
+	  <br>Move this interior folder into your <span class="attention">Mods</span> folder. <span class="danger">Make sure that the inside of the folder looks similar to this</span>.
+	  <br><br><img src="img/instruction_modfolder.png">
+	  <br>If it only has a <span class="danger">single folder</span>, go inside that folder and take everything in there out by 1 step.
+	  <br>
+	  <br>6. It is done, please enjoy!
+	  <br><span class="inactive">Note:</span> It is <span class="attention">highly recommended</span> to have a <span class="danger">separate profile</span> for playing modded,
+	  <br>so you can keep the <span class="attention">vanilla save file</span> intact!
     </p>
-    <br>
-    <h2>download link</h2>
-    <br>
-    <a href="index.html" id="download">Back to main page</a>
-    <br>
-    <br>
-    <div class="jokersfull">
-      <h2>jokers</h2>
-      <br>
-      <div class="jokers cards">
-        
-      </div>
-      <br>
-    </div>
   </main>
   <script src="addjokers.js" defer></script>
 </body>

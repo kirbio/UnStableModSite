@@ -1,1468 +1,1489 @@
 let jokers = [
-  {
-    name: "Lunar Calendar",
+{
+     name: "Lunar Calendar",
 
-    text: [
+     text: [
 "Played cards with",
-"{V:1}#1#{} suit has",
-"{C:green}#2# in #3#{} chance to create",
+"{C:spades}Spade{} suit have",
+"{C:green}1 in 8{} chance to create a",
 "random {C:planet}Planet{} card when scored",
 "{C:inactive}(Must have room)",
 "{s:0.8}Suit changes at the end of the round",
 ],
 
-    image_url: "img/joker/lunar_calendar.png",
+     image_url: "img/joker/lunar_calendar.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Dragon Hoard",
+     name: "Dragon Hoard",
 
-    text: [
-"Gives {C:mult}+#1#{} Mult for",
-"every {C:attention}#2#{} consumables",
-"held in hand",
-"{C:inactive}(Currently {C:mult}+#3#{C:inactive} Mult)",
+     text: [
+"Gives {C:mult}+5{} Mult for",
+"every {C:attention}2{} {C:attention}consumables{}",
+"in your {C:attention}consumable{} area",
+"{C:inactive}(Currently {C:mult}+0{C:inactive} Mult)",
 ],
 
-    image_url: "img/joker/dragon_hoard.png",
+     image_url: "img/joker/dragon_hoard.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Card Dealer",
+     name: "Card Dealer",
 
-    text: [
-"{C:chips}+#1#{} Chips per {C:attention}played{}",
+     text: [
+"{C:chips}+10{} Chips per {C:attention}played{}",
 "cards this round",
 "{C:attention}Resets{} at the end",
 "of the round",
-"{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)",
+"{C:inactive}(Currently {C:chips}+0{C:inactive} Chips)",
 ],
 
-    image_url: "img/joker/card_dealer.png",
+     image_url: "img/joker/card_dealer.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Match Three",
+     name: "Match Three",
 
-    text: [
-"{C:mult}+#1#{} Mult if the scoring hand has",
-"{C:attention}#2#{} or more adjacent cards",
+     text: [
+"{C:mult}+15{} Mult if played hand contains",
+"{C:attention}3{} or more adjacent cards",
 "with the {C:attention}same base suit{}",
 ],
 
-    image_url: "img/joker/match_three.png",
+     image_url: "img/joker/match_three.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Furry Joker",
+     name: "Furry Joker",
 
-    text: [
-"Played {C:attention}Wild Card{} has",
-"{C:green}#1# in #2#{} chance to",
-"turns {C:dark_edition}Polychrome{} when scored",
+     text: [
+"Played {C:attention}Wild Cards{} have",
+"{C:green}1 in 12{} chance to",
+"turn {C:dark_edition}Polychrome{} when scored",
 ],
 
-    image_url: "img/joker/furry_joker.png",
+     image_url: "img/joker/furry_joker.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Luxurious Handbag",
+     name: "Luxurious Handbag",
 
-    text: [
-"{C:attention}+#1#{} Consumable Slot",
-"{C:red}Raises price{} of everything in",
-"shop (except reroll) by {C:gold}$#2#{}",
+     text: [
+"{C:attention}+2{} consumable slot",
+"{C:red}Raises prices{} of everything in the",
+"{C:attention}shop{} (except reroll) by {C:gold}$2{}",
 ],
 
-    image_url: "img/joker/luxurious_handbag.png",
+     image_url: "img/joker/luxurious_handbag.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Portal",
+     name: "Portal",
 
-    text: [
-"{C:attention}Aces{} can be used in a",
+     text: [
+"{C:attention}Aces{} can be used in the",
 "middle of a {C:purple}Straight{} hand",
-"{C:inactive}(Ex: 3 2 Ace King Queen)",
+"{C:inactive}(Ex: 3, 2, Ace, King, Queen)",
 ],
 
-    image_url: "img/joker/portal.png",
+     image_url: "img/joker/portal.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Vainglorious Joker",
+     name: "Vainglorious Joker",
 
-    text: [
+     text: [
 "Played cards with",
-"{C:attention}Suit Seal{} gives",
-"{C:attention}+#1#{} Mult when scored",
+"{C:attention}Suit Seal{} give",
+"{C:attention}+2{} Mult when scored",
 ],
 
-    image_url: "img/joker/vainglorious_joker.png",
+     image_url: "img/joker/vainglorious_joker.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Acedia Joker",
+     name: "Acedia Joker",
 
-    text: [
+     text: [
 "Played cards with",
 "{C:attention}Suit Seal{} in the same",
-"{C:purple}suit category{} of the cards suit gives",
-"{C:attention}+#1#{} Mult when scored",
+"{C:purple}suit category{} as the card's suit",
+"give {C:attention}+6{} Mult when scored",
 ],
 
-    image_url: "img/joker/acedia_joker.png",
+     image_url: "img/joker/acedia_joker.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Cinnabar",
+     name: "Cinnabar",
 
-    text: [
-"Played cards with",
-"{C:attention}Suit Seal{} has",
-"{C:green}#1# in #2#{} chance to create respective",
+     text: [
+"Played cards with {C:attention}Suit Seal{} have",
+"{C:green}1 in 6{} chance to create respective",
 "{C:auxiliary}Seal Auxiliary{} Card when scored",
 "{C:inactive}(Must have room)",
 ],
 
-    image_url: "img/joker/cinnabar.png",
+     image_url: "img/joker/cinnabar.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Black Jack",
+     name: "Black Jack",
 
-    text: [
-"This Joker gains {C:chips}Chips{} equals to total rank",
-"of the played hand if it is under {C:attention}#1#{}.",
-"Doubled the amount of gained chips if the total rank is exactly {C:attention}#1#{}.",
-"Resets if the total rank is more than {C:attention}#1#{}.",
-"{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)",
+     text: [
+"This Joker gains {C:chips}Chips{} equal to {C:attention}total rank{}",
+"of the played hand if it is under {C:attention}21{}.",
+"Doubles gained chips if the {C:attention}total rank{} is exactly {C:attention}21{}.",
+"Resets if the total rank is more than {C:attention}21{}.",
+"{C:inactive}(Currently {C:chips}+0{C:inactive} Chips)",
 ],
 
-    image_url: "img/joker/black_jack.png",
+     image_url: "img/joker/black_jack.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "What",
+     name: "What",
 
-    text: [
-"Each played {C:attention}???{}",
-"gives {C:chips}+#1#{} Chips and",
-"{C:mult}+#2#{} Mult when scored",
+     text: [
+"Played {C:attention}???{}",
+"give {C:chips}+420{} Chips and",
+"{C:mult}+69{} Mult when scored",
 ],
 
-    image_url: "img/joker/what.png",
+     image_url: "img/joker/what.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Floating-Point Error",
+     name: "Floating-Point Error",
 
-    text: [
-"Scored cards with {C:attention}Decimal Rank{}",
-"Gains {C:chips}extra chips{} equal to its own {C:attention}rank{}",
+     text: [
+"Every played {C:attention}Decimal Rank{} card",
+"permanently gains {C:chips}extra chips{}",
+"equal to its own {C:attention}rank{}",
 ],
 
-    image_url: "img/joker/floating_point_error.png",
+     image_url: "img/joker/floating_point_error.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Academic Journal",
+     name: "Academic Journal",
 
-    text: [
+     text: [
 "Adds one random {C:attention}Enhanced Card{}",
 "with {C:attention}decimal rank{} to deck if",
-"the played hand does not have {C:attention}face card{}",
-"{C:inactive}(Once per round. Currently {C:red}#1#/#2#{C:inactive})",
+"played hand does not have a {C:attention}face{} card",
+"{C:inactive}(Once per round. Currently {C:red}0/1{C:inactive})",
 ],
 
-    image_url: "img/joker/academic_journal.png",
+     image_url: "img/joker/academic_journal.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Engineer",
+     name: "Engineer",
 
-    text: [
-"Card with {C:attention}decimal ranks{} counts as",
+     text: [
+"Cards with {C:attention}decimal ranks{} count as",
 "the nearest {C:attention}integer rank{} rounded up when",
-"played in non-{C:purple}Straight{} hands.",
+"played in non-{C:purple}Straight{} hands",
 "{C:inactive}(EX: 3.14 -> 4)",
 ],
 
-    image_url: "img/joker/engineer.png",
+     image_url: "img/joker/engineer.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Thesis Proposal",
+     name: "Thesis Proposal",
 
-    text: [
+     text: [
 "Retrigger all played cards",
 "with {C:attention}decimal ranks{}",
 ],
 
-    image_url: "img/joker/thesis_proposal.png",
+     image_url: "img/joker/thesis_proposal.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Rainbow Flag",
+     name: "Rainbow Flag",
 
-    text: [
+     text: [
 "If a hand containing {C:purple}Straight{} has",
-"at least 1 {C:attention}decimal rank{} cards",
-"{C:green}#1# in #2#{} chance to turns",
-"one of the card {C:dark_edition}Polychrome{}",
+"at least 1 {C:attention}decimal rank{} card,",
+"{C:green}1 in 8{} chance to turn",
+"one of the cards {C:dark_edition}Polychrome{}",
 ],
 
-    image_url: "img/joker/rainbow_flag.png",
+     image_url: "img/joker/rainbow_flag.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Dummy Data",
+     name: "Dummy Data",
 
-    text: [
-"For each {C:attention}unscored cards{}",
-"{C:green}#1# in #2#{} chance to",
-"Converts rank to {C:attention}0{}",
-"(Retains amount of chips)",
+     text: [
+"For each {C:attention}unscored card{}",
+"{C:green}1 in 2{} chance to",
+"convert its rank to {C:attention}0{}",
+"(Retains amount of Chips)",
 ],
 
-    image_url: "img/joker/dummy_data.png",
+     image_url: "img/joker/dummy_data.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Micro SD Card",
+     name: "Micro SD Card",
 
-    text: [
-"If this Joker is in the {C:attention}leftmost position{}",
-"take all {C:chips}chips{} from discarded base {C:attention}numbered cards{}",
-"Strips cards rank to {C:attention}0{}",
-"{C:green}#1# in #2#{} chance to destroy itself at the end of round",
-"Chance increases by the amount of chip stored",
-"{C:inactive}(Currently {C:chips}+#4#{C:inactive} Chips)",
-"{C:inactive}Status: {V:1}#5#{}",
+     text: [
+"If this Joker is in the {C:attention}leftmost position{},",
+"take all Chips from discarded base {C:attention}numbered cards{}",
+"and strip those cards' ranks to {C:attention}0{}",
+"{C:green}0 in 512{} chance to destroy itself at the end of round",
+"Chance increases by the amount of Chips stored",
+"{C:inactive}(Currently {C:chips}+0{C:inactive} Chips)",
 ],
 
-    image_url: "img/joker/micro_sd_card.png",
+     image_url: "img/joker/micro_sd_card.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Social Experiment",
+     name: "Social Experiment",
 
-    text: [
-"For each {C:attention}Numbered Cards{}",
-"Double all chips and give it to next card",
-"Strips cards rank to {C:attention}0{}",
+     text: [
+"For each played {C:attention}numbered card{},",
+"double its Chips, give it to the next card",
+"and strip its {C:attention}rank{} to {C:attention}0{}",
 ],
 
-    image_url: "img/joker/social_experiment.png",
+     image_url: "img/joker/social_experiment.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Power of One",
+     name: "Power of One",
 
-    text: [
-"Gains {C:mult}+#1#{} Mult for each",
+     text: [
+"Gives {C:mult}+2{} Mult for each",
 "{C:attention}1{} in your {C:attention}full deck{}",
-"{C:inactive}(Currently {C:mult}+#2#{C:inactive})",
+"{C:inactive}(Currently {C:mult}+0{C:inactive})",
 ],
 
-    image_url: "img/joker/power_of_one.png",
+     image_url: "img/joker/power_of_one.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Binary Number",
+     name: "Binary Number",
 
-    text: [
-"If the {C:attention}full played hand{} only have {C:attention}four or less{} cards",
-"and only consists of {C:attention}rank 0{} and {C:attention}1{} cards",
-"Creates a card with rank equal",
-"to number represented in binary",
+     text: [
+"If played hand contains {C:attention}4{} or fewer cards",
+"and only consists of {C:attention}rank 0{} and {C:attention}1{} cards,",
+"create a card with {C:attention}rank{} equal",
+"to the number represented in binary",
 "({C:red}Ex:{} {C:attention}1001{} -> {C:attention}9{})",
-"{C:inactive}Jack Queen King Ace is 11-14 respectively{}",
+"{C:inactive}Jack, Queen, King, Ace is 11-14, respectively{}",
 ],
 
-    image_url: "img/joker/binary_number.png",
+     image_url: "img/joker/binary_number.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Quintuplets",
+     name: "Quintuplets",
 
-    text: [
-"If the winning hand is {C:attention}Flush Five{}",
-"with all {C:attention}Enhanced cards{}",
-"Create {C:dark_edition}Negative Tag{}",
+     text: [
+"If the winning hand is a {C:attention}Flush Five{}",
+"containing all {C:attention}Enhanced cards{},",
+"create a {C:dark_edition}Negative Tag{}",
 ],
 
-    image_url: "img/joker/quintuplets.png",
+     image_url: "img/joker/quintuplets.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Graphic Card",
+     name: "Graphic Card",
 
-    text: [
-"Create {C:attention}Double Tag{}",
+     text: [
+"Create a {C:attention}Double Tag{}",
 "at the end of the round",
-"if scored {C:attention}#1#{} or more cards",
-"with {C:dark_edition}editions{} this round",
-"{C:inactive}(Current: {C:attention}#2#{C:inactive})",
+"if {C:attention}8{} or more cards with",
+"{C:dark_edition}editions{} were scored this round",
+"{C:inactive}(Currently {C:attention}0 {C:inactive}cards)",
 ],
 
-    image_url: "img/joker/graphic_card.png",
+     image_url: "img/joker/graphic_card.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Connoiseur",
+     name: "Connoiseur",
 
-    text: [
+     text: [
 "Retrigger all played cards",
 "with {C:dark_edition}editions{}",
 ],
 
-    image_url: "img/joker/connoiseur.png",
+     image_url: "img/joker/connoiseur.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Jeweler",
+     name: "Jeweler",
 
-    text: [
-"{C:green}#1# in #2#{} chance to downgrade",
+     text: [
+"{C:green}1 in 4{} chance to downgrade",
 "level of played {C:attention}poker hand{}",
-"and {C:attention}upgrade{} edition",
+"and {C:purple}upgrade{} edition",
 "of all scored cards",
 ],
 
-    image_url: "img/joker/jeweler.png",
+     image_url: "img/joker/jeweler.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Joker Diffusion",
+     name: "Joker Diffusion",
 
-    text: [
-"Converts {C:attention}#1#{} random {C:attention}non-enhanced{} card",
+     text: [
+"Converts {C:attention}1{} random {C:attention}non-enhanced{} card",
 "in hand to {C:attention}Slop Card{} every time",
 "a hand is played with {C:attention}unscored card{}",
 ],
 
-    image_url: "img/joker/joker_diffusion.png",
+     image_url: "img/joker/joker_diffusion.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Non-Fungible Joker",
+     name: "Non-Fungible Joker",
 
-    text: [
-"If the discarded hand contains",
-"only {C:attention}#1# Slop Card{} destroy it and",
-"earn random amount up to {C:gold}$#2#",
-"{s:0.8C:red}Maximum Payout and Sell Value drops at the end of the round",
+     text: [
+"If a discarded hand contains",
+"only {C:attention}1 Slop Card{}, destroy it and",
+"earn random amount of up to {C:gold}$10",
+"{s:0.8,C:red}Maximum Payout and Sell Value drops at the end of the round",
 ],
 
-    image_url: "img/joker/nonfungible_joker.png",
+     image_url: "img/joker/nonfungible_joker.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Prompt",
+     name: "Prompt",
 
-    text: [
-"Scored {C:attention}Slop Card{} takes {C:attention}rank{} and {C:attention}suit",
-"from other scored {C:attention}non-Slop Card{}",
-"instead of random if possible",
+     text: [
+"Scored {C:attention}Slop Cards{} take",
+"the {C:attention}rank{} and {C:attention}suit{} from",
+"other scored {C:attention}non-Slop Cards{}",
+"instead of random (if possible)",
 ],
 
-    image_url: "img/joker/prompt.png",
+     image_url: "img/joker/prompt.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Uninterested Primate",
+     name: "Uninterested Primate",
 
-    text: [
-"Gains {C:chips}+#1#{} Chips every {C:attention}#2# {C:inactive}#6#",
+     text: [
+"Gains {C:chips}+10{} Chips every {C:attention}5",
 "{C:attention}Slop Cards{} scored.",
-"{C:green}#3# in #4#{} chance to destroy",
-"itself at the end of the round",
-"{C:inactive}(Currently: {C:chips}+#5# {C:inactive}Chips)",
+"{C:green}1 in 8{} chance this card is",
+"destroyed at end of round",
+"{C:inactive}(Currently {C:chips}+50 {C:inactive}Chips)",
 ],
 
-    image_url: "img/joker/uninterested_primate.png",
+     image_url: "img/joker/uninterested_primate.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Lethargic Lion",
+     name: "Lethargic Lion",
 
-    text: [
-"Gains {X:mult, C:white}X#1#{} Mult every {C:attention}#2# {C:inactive}#6#",
+     text: [
+"Gains {X:mult,C:white}X0.02{} Mult every {C:attention}5",
 "{C:attention}Slop Cards{} scored.",
-"{C:green}#3# in #4#{} chance to destroy",
-"itself at the end of the round",
-"{C:inactive}(Currently: {X:mult, C:white}X#5#{C:inactive} Mult)",
+"{C:green}1 in 8{} chance this card is",
+"destroyed at end of round",
+"{C:inactive}(Currently {X:mult,C:white}X2{C:inactive} Mult)",
 ],
 
-    image_url: "img/joker/lethargic_lion.png",
+     image_url: "img/joker/lethargic_lion.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Joker Island",
+     name: "Joker Island",
 
-    text: [
-"For every played card",
-"with rank {C:attention}#1#{}",
-"{C:green}#2# in #3#{} chance to create",
-"a new {C:attention}Resource Card{} of the same scored suit",
+     text: [
+"For every scored card",
+"with {C:attention}rank{} {C:attention}2{},",
+"{C:green1 in 6{} chance to add a",
+"{C:attention}Resource Card{} of the same suit to deck",
+"{s:0.8}rank changes at end of round",
 ],
 
-    image_url: "img/joker/joker_island.png",
+     image_url: "img/joker/joker_island.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Kaiju",
+     name: "Kaiju",
 
-    text: [
-"{C:dark_edition}+#1#{} Joker Slot",
-"Turns one random card",
-"into {C:attention}Radioactive Card{} when",
+     text: [
+"{C:dark_edition}+3{} Joker slot",
+"Converts one random card",
+"into a {C:attention}Radioactive Card{} when",
 "first hand is drawn",
 ],
 
-    image_url: "img/joker/kaiju.png",
+     image_url: "img/joker/kaiju.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Poison the Well",
+     name: "Poison the Well",
 
-    text: [
-"{C:red}+#1#{} Discards",
-"Turns one random card in each discarded hand",
-"into {C:attention}Poison Card{}",
+     text: [
+"{C:red}+3{} Discards",
+"Converts one random card",
+"in each discarded hand",
+"into a {C:attention}Poison Card{}",
 ],
 
-    image_url: "img/joker/poison_the_well.png",
+     image_url: "img/joker/poison_the_well.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Petri Dish",
+     name: "Petri Dish",
 
-    text: [
-"{C:blue}+#1#{} Hands",
-"{C:green}#2# in #3#{} chance of turning",
+     text: [
+"{C:blue}+3{} Hands",
+"{C:green}1 in 2{} chance of converting",
 "one random played card",
-"into {C:attention}Biohazard Card{}",
+"into a {C:attention}Biohazard Card{}",
 ],
 
-    image_url: "img/joker/petri_dish.png",
+     image_url: "img/joker/petri_dish.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Geiger Counter",
+     name: "Geiger Counter",
 
-    text: [
-"Gives {C:mult}+#1#{} Mult for each",
-"{C:attention}Radioactive Card{} in your {C:attention}full deck{}",
-"{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)",
+     text: [
+"Gives {C:mult}+4{} Mult for",
+"each {C:attention}Radioactive Card{}",
+"in your {C:attention}full deck{}",
+"{C:inactive}(Currently {C:mult}+0{C:inactive} Mult)",
 ],
 
-    image_url: "img/joker/geiger_counter.png",
+     image_url: "img/joker/geiger_counter.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Strych-Nine",
+     name: "Strych-Nine",
 
-    text: [
-"Gives {C:chips}+#1#{} Chips for each",
-"{C:attention}Poison Card{} in your {C:attention}full deck{}",
-"{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips)",
+     text: [
+"Gives {C:chips}+9{} Chips",
+"for each {C:attention}Poison Card{}",
+"in your {C:attention}full deck{}",
+"{C:inactive}(Currently {C:chips}+0{C:inactive} Chips)",
 ],
 
-    image_url: "img/joker/strych_nine.png",
+     image_url: "img/joker/strych_nine.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Vaccination Card",
+     name: "Vaccination Card",
 
-    text: [
+     text: [
 "Neutralize all {C:attention}Biohazard Card{} passive effects",
-"Gives additional {X:mult, C:white}X#1#{} Mult for each",
-"{C:attention}Biohazard Card{} held in hand.",
-"{C:inactive}(Currently {X:mult, C:white}X#2#{C:inactive} Mult)",
+"Gives additional {X:mult,C:white}X0.25{} Mult for each",
+"{C:attention}Biohazard Card{} held in hand",
+"{C:inactive}(Currently {X:mult,C:white}X1{C:inactive} Mult)",
 ],
 
-    image_url: "img/joker/vaccination_card.png",
+     image_url: "img/joker/vaccination_card.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Vintage Joker",
+     name: "Vintage Joker",
 
-    text: [
+     text: [
 "Scored {C:attention}Vintage Cards{} have",
-"{C:green}#1# in #2#{} chance to reduce",
-"the destroyed chance by half",
+"{C:green}1 in 4{} chance to reduce",
+"their destroy chance by half",
 ],
 
-    image_url: "img/joker/vintage_joker.png",
+     image_url: "img/joker/vintage_joker.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Rules Errata",
+     name: "Rules Errata",
 
-    text: [
-"{C:attention}Acorn Mark Cards{} give {C:attention}half{} of a",
-"ranks value as Mult when scored",
+     text: [
+"{C:attention}Acorn Mark Cards{} give {C:attention}half{} of their",
+"{C:attention}rank{}'s value as Mult when scored",
 ],
 
-    image_url: "img/joker/rules_errata.png",
+     image_url: "img/joker/rules_errata.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Auction Winner",
+     name: "Auction Winner",
 
-    text: [
-"If {C:attention}Promo Card{} is destroyed after scored",
-"gains {C:gold}money{} equals to amount the card",
-"gives before breaks",
+     text: [
+"If a {C:attention}Promo Card{} is",
+"destroyed from scoring, this Joker",
+"gains {C:gold}money{} equal to",
+"the {C:gold}money{} that card gave",
+"before its destruction",
 ],
 
-    image_url: "img/joker/auction_winner.png",
+     image_url: "img/joker/auction_winner.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Free Trial",
+     name: "Free Trial",
 
-    text: [
-"{C:green}#1# in #2#{} chance to create",
-"a {C:dark_edition}negative{} random {C:auxiliary}Auxiliary{} Card",
+     text: [
+"{C:green}1 in 4{} chance to create",
+"a {C:dark_edition}Negative{} random {C:auxiliary}Auxiliary{} Card",
 "when an {C:auxiliary}Auxiliary{} Card is used",
 ],
 
-    image_url: "img/joker/free_trial.png",
+     image_url: "img/joker/free_trial.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Extended Warranty",
+     name: "Extended Warranty",
 
-    text: [
-"{C:auxiliary}Auxiliary{} Cards held in hand",
-"give {X:mult, C:white}X#1#{} Mult",
+     text: [
+"{C:auxiliary}Auxiliary{} Cards in",
+"your {C:attention}consumable{} area",
+"give {X:mult,C:white}X1.5{} Mult",
 ],
 
-    image_url: "img/joker/extended_warranty.png",
+     image_url: "img/joker/extended_warranty.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Technician",
+     name: "Technician",
 
-    text: [
-"{C:chips}+#1#{} Chips per {C:auxiliary}Auxiliary{}",
-"card used this run",
-"{C:inactive}(Currently {C:chips}+#2#{C:inactive} Chips){}",
+     text: [
+"{C:chips}+15{} Chips per",
+"{C:auxiliary}Auxiliary{} Card",
+"used this run",
+"{C:inactive}(Currently {C:chips}+0{C:inactive} Chips){}",
 ],
 
-    image_url: "img/joker/technician.png",
+     image_url: "img/joker/technician.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Season Pass",
+     name: "Season Pass",
 
-    text: [
-"{C:green}#1# in #2#{} chance to create",
+     text: [
+"{C:green}1 in 6{} chance to create",
 "a random {C:auxiliary}Auxiliary{} Card",
-"when discard a {C:attention}face{} card",
+"when discarding a {C:attention}face{} card",
 "{C:inactive}(Must have room)",
 ],
 
-    image_url: "img/joker/season_pass.png",
+     image_url: "img/joker/season_pass.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Joker2",
+     name: "Joker2",
 
-    text: [
-"{C:mult}+#1#{} Mult",
-"{X:mult, C:white}X#2#{} Mult",
-"{C:green}#3# in #4#{} chance of destroying itself",
-"at the end of round",
+     text: [
+"{C:mult}+4{} Mult",
+"{X:mult,C:white}X2{} Mult",
+"{C:green}1 in 4{} chance this",
+"card is destroyed",
+"at end of round",
 ],
 
-    image_url: "img/joker/joker2.png",
+     image_url: "img/joker/joker2.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "Joker Stairs",
+     name: "Joker Stairs",
 
-    text: [
-"Gain {C:mult}+#1#{} Mult when buying a joker",
-"with {C:attention}Joker{} in the name.",
-"{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult){}",
+     text: [
+"Gain {C:mult}+4{} Mult when buying a Joker",
+"with {C:attention}\"Joker\"{} in its name",
+"{C:inactive}(Currently {C:mult}+0{C:inactive} Mult){}",
 ],
 
-    image_url: "img/joker/joker_stairs.png",
+     image_url: "img/joker/joker_stairs.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Plagiarism",
+     name: "Plagiarism",
 
-    text: [
+     text: [
 "Copies ability of",
 "{C:attention}Joker{} to the",
 "left or right at random",
-"{s:0.8}Direction changes each hands played",
-"{C:inactive}(Currently: {C:red}#1#{C:inactive})",
+"{s:0.8}Direction changes each hand played",
 ],
 
-    image_url: "img/joker/plagiarism.png",
+     image_url: "img/joker/plagiarism.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Joker Throwing Card",
+     name: "Joker Throwing Card",
 
-    text: [
-"Decrease blind size by {C:attention}#1#%{}",
-"{C:green}#2# in #3#{} chance to destroy",
-"one of the scored card",
-"Increases percentage by {C:attention}#4#%{}",
+     text: [
+"Decrease {C:attention}Blind{} size by {C:attention}10%{}",
+"{C:green}1 in 4{} chance to destroy",
+"one of the scored cards",
+"Increases percentage by {C:attention}2%{}",
 "if a card is destroyed this way",
 ],
 
-    image_url: "img/joker/joker_throwing_card.png",
+     image_url: "img/joker/joker_throwing_card.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Jackhammer",
+     name: "Jackhammer",
 
-    text: [
-"If the {C:attention}scoring hand{} has only one {C:attention}Jack{}",
-"retrigger it {C:attention}#1#{} more times",
+     text: [
+"If the {C:attention}played hand{} has only one {C:attention}Jack{},",
+"retrigger it {C:attention}5{} more times",
 "and {C:red}destroy it{} afterward",
 ],
 
-    image_url: "img/joker/jackhammer.png",
+     image_url: "img/joker/jackhammer.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Jack of All Trades",
+     name: "Jack of All Trades",
 
-    text: [
-"Played {C:attention}Jack{} gives",
-"{C:chips}+#1#{} Chips {C:mult}+#2#{} Mult",
-"{X:mult, C:white}X#3#{} XMult and {C:gold}$#4#",
+     text: [
+"Played {C:attention}Jacks{} give",
+"{C:chips}+15{} Chips, {C:mult}+2{} Mult, ",
+"{X:mult,C:white}X1.1{} Mult, and {C:gold}$1",
 ],
 
-    image_url: "img/joker/jack_of_all_trades.png",
+     image_url: "img/joker/jack_of_all_trades.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Magic Trick Card",
+     name: "Magic Trick Card",
 
-    text: [
-"Scored {V:1}#1#",
-"turns into {V:2}#2#",
-"{s:0.8}On discard flips over the Joker",
+     text: [
+"Scored {C:hearts}Queen of Hearts{} cards",
+"turn into {C:clubs}7 of Clubs{} cards",
+"{s:0.8}On discard, flips over the Joker",
 ],
 
-    image_url: "img/joker/magic_trick_card.png",
+     image_url: "img/joker/magic_trick_card.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Queensland",
+     name: "Queensland",
 
-    text: [
-"Played {C:attention}Queen{} creates",
-"{C:attention}Resource Card{} of",
-"the corresponding suit.",
-"{C:inactive}({C:red}#1#{C:inactive} times per round {C:red}#2# left{C:inactive})",
+     text: [
+"Scored {C:attention}Queens{} add",
+"{C:attention}Resource Cards{} of",
+"the corresponding suits to deck",
+"{C:inactive}({C:red}3{C:inactive} times per round, {C:red}3 left{C:inactive})",
 ],
 
-    image_url: "img/joker/queensland.png",
+     image_url: "img/joker/queensland.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Polychrome Red Seal Steel Joker",
+     name: "Polychrome Red Seal Steel Joker",
 
-    text: [
-"{C:green}#1# in #2#{} chance for scored {C:attention}Kings{} to upgrade {C:dark_edition}edition",
-"{C:green}#1# in #3#{} chance for scored {C:attention}Kings{} to {C:attention}retrigger",
-"{C:green}#1# in #4#{} chance for {C:attention}Kings{} held in hand to give {X:mult, C:white}X#5#{} Mult",
+     text: [
+"{C:green}1 in 8{} chance for scored {C:attention}Kings{} to {C:purple}upgrade{} edition",
+"{C:green}1 in 4{} chance for scored {C:attention}Kings{} to {C:attention}retrigger",
+"{C:green}1 in 2{} chance for {C:attention}Kings{} held in hand to give {X:mult,C:white}X2{} Mult",
 ],
 
-    image_url: "img/joker/prssj.png",
+     image_url: "img/joker/prssj.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "King of Pop",
+     name: "King of Pop",
 
-    text: [
+     text: [
 "Played {C:attention}Enhanced Kings{} have",
-"{C:green}#1# in #2#{} chance to be",
-"destroyed and create 1 {C:dark_edition}Double Tag",
+"{C:green}1 in 8{} chance to be",
+"destroyed and create a {C:dark_edition}Double Tag",
 ],
 
-    image_url: "img/joker/king_of_pop.png",
+     image_url: "img/joker/king_of_pop.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Master of One",
+     name: "Master of One",
 
-    text: [
-"Adds one {C:attention}Enhanced Rank 1{} Card",
-"to the deck when {C:attention}Blind{} is selected",
+     text: [
+"Adds one {C:attention}Enhanced Rank 1{} card",
+"to deck when {C:attention}Blind{} is selected",
 ],
 
-    image_url: "img/joker/master_of_one.png",
+     image_url: "img/joker/master_of_one.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Spectre",
+     name: "Spectre",
 
-    text: [
-"{X:mult, C:white}X#1#{} Mult per {C:spectral}Spectral{}",
+     text: [
+"{X:mult,C:white}X0.25{} Mult per {C:spectral}Spectral{}",
 "card used this run",
-"{C:inactive}(Currently {X:mult, C:white}X#2#{C:inactive} Mult){}",
+"{C:inactive}(Currently {X:mult,C:white}X1{C:inactive} Mult){}",
 ],
 
-    image_url: "img/joker/spectre.png",
+     image_url: "img/joker/spectre.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Library Card",
+     name: "Library Card",
 
-    text: [
-"For each scoring cards {C:attention}singular",
-"{C:attention}suit name{} in English. Give:",
-"{C:chips}+#1#{} Chips per {C:attention}Consonant",
-"{C:mult}+#2#{} Mult per {C:attention}Vowel",
-"{C:inactive}(Example: Spade",
+     text: [
+"For each scored card's {C:attention}singular",
+"{C:attention}suit name{} in English, give:",
+"{C:chips}+5{} Chips per {C:attention}Consonant",
+"{C:mult}+2{} Mult per {C:attention}Vowel",
+"{C:inactive}(Example: Spade = {C:chips}+15{C:inactive} Chips, {C:red}+4{C:inactive} Mult)",
 ],
 
-    image_url: "img/joker/library_card.png",
+     image_url: "img/joker/library_card.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Collectors Album",
+     name: "Collector's Album",
 
-    text: [
-"Jokers with {C:attention}Card{} in",
-"the name each gives",
-"{C:chips}+#1#{} Chips",
+     text: [
+"Jokers with {C:attention}\"Card\"{} in",
+"their name each give",
+"{C:chips}+120{} Chips",
 ],
 
-    image_url: "img/joker/collector_album.png",
+     image_url: "img/joker/collector_album.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Throwing Hands",
+     name: "Throwing Hands",
 
-    text: [
-"{X:mult, C:white}X#1#{} Mult if the played hand is {C:attention}#3#{}",
-"{X:mult, C:white}X#2#{} Mult otherwise",
-"{s:0.8}Hand changes at the end of round",
+     text: [
+"{X:mult,C:white}X5{} Mult if poker hand is {C:attention}High Card{}",
+"{X:mult,C:white}X0.5{} Mult otherwise",
+"{s:0.8}hand changes at end of round",
 ],
 
-    image_url: "img/joker/throwing_hands.png",
+     image_url: "img/joker/throwing_hands.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Imperial Bower",
+     name: "Imperial Bower",
 
-    text: [
-"{X:mult, C:white}X#1#{} Mult if the played hand",
+     text: [
+"{X:mult,C:white}X3{} Mult if played hand",
 "contains a {C:attention}Straight{} and",
-"has at least one {C:attention}face card{}",
+"has at least one {C:attention}face{} card",
 ],
 
-    image_url: "img/joker/imperial_bower.png",
+     image_url: "img/joker/imperial_bower.png",
 
-   rarity: "Common"
-  },
+    rarity: "Common"
+   },
 {
-    name: "The Jolly Joker",
+     name: "The \"Jolly Joker\"",
 
-    text: [
-"Gains {C:mult}+#1#{} Mult if",
-"played hand contains {C:attention}Pair{}",
+     text: [
+"Gains {C:mult}+8{} Mult if",
+"played hand contains a {C:attention}Pair{}",
 "{C:red}Resets{} if played hand",
-"does not contain {C:attention}Pair{}",
-"{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)",
+"does not contain a {C:attention}Pair{}",
+"{C:inactive}(Currently {C:mult}+0{C:inactive} Mult)",
 ],
 
-    image_url: "img/joker/the_jolly_joker.png",
+     image_url: "img/joker/the_jolly_joker.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Get Out of Jail Free Card",
+     name: "Get Out of Jail Free Card",
 
-    text: [
+     text: [
 "Sell this Joker to",
 "win the blind instantly",
-"{C:inactive}Status: {V:1}#1#{}",
 ],
 
-    image_url: "img/joker/get_out_of_jail_free_card.png",
+     image_url: "img/joker/get_out_of_jail_free_card.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Tanzaku",
+     name: "Tanzaku",
 
-    text: [
-"Retrigger played card",
-"with {C:attention}seal{} additional {C:attention}#1#{} times",
-"Amount increase by {C:attention}#2#{} for",
-"every discarded card with {C:attention}seal{}",
-"{s:0.8}Reset after each round",
+     text: [
+"Retrigger played cards with",
+"{C:attention}seals{} {C:attention}0{} additional times",
+"Amount increases by {C:attention}1{} for",
+"every discarded card with a {C:attention}seal{}",
+"{s:0.8}Resets after each round",
 ],
 
-    image_url: "img/joker/tanzaku.png",
+     image_url: "img/joker/tanzaku.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Glass Cannon",
+     name: "Glass Cannon",
 
-    text: [
+     text: [
 "Retrigger each",
 "played {C:attention}Glass Card{}",
 "{C:red}Glass Cards are guaranteed",
-"{C:red}breaking after scored",
+"{C:red}to break when scored",
 ],
 
-    image_url: "img/joker/glass_cannon.png",
+     image_url: "img/joker/glass_cannon.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Pity Rate Drop",
+     name: "Pity Rate Drop",
 
-    text: [
-"When {C:attention}Blind{} is selected",
-"{C:green}#1# in #2#{} chance to create {C:red}Rare {C:attention}Joker{}",
-"Chance increase by {C:green}#3#{} if no {C:attention}Joker{} created",
-"resets to {C:green}#4#{} otherwise.",
+     text: [
+"When {C:attention}Blind{} is selected,",
+"{C:green}1 in 12{} chance to create a {C:red}Rare {C:attention}Joker{}",
+"Chance increase by {C:green}1{} if no {C:attention}Joker{} created,",
+"resets to {C:green}1{} otherwise",
 "{C:inactive}(Must have room)",
 ],
 
-    image_url: "img/joker/pity_rate_drop.png",
+     image_url: "img/joker/pity_rate_drop.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Salmon Run",
+     name: "Salmon Run",
 
-    text: [
-"{C:green}#1# in #2#{} chance of",
-"duplicating any scored {C:attention}7{}",
+     text: [
+"Each played {C:attention}7{} has a",
+"{C:green}1 in 7{} chance of adding a",
+"permanent copy to deck when scored",
 ],
 
-    image_url: "img/joker/salmon_run.png",
+     image_url: "img/joker/salmon_run.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Cool S",
+     name: "Cool S",
 
-    text: [
-"Played {C:attention}8s{} became",
-"a random {C:attention}enhanced card{}",
+     text: [
+"Played {C:attention}8s{} become",
+"a random {C:attention}Enhanced card{}",
 ],
 
-    image_url: "img/joker/cool_s.png",
+     image_url: "img/joker/cool_s.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Memoriam Photo",
+     name: "Memoriam Photo",
 
-    text: [
-"When a playing card is {C:attention}destroyed{}",
-"gains {C:chips}Chips{} equal to {C:attention}double{}",
+     text: [
+"When a playing card is {C:attention}destroyed{},",
+"this Joker gains Chips equal to {C:attention}double{}",
 "the rank of the {C:attention}destroyed card{}",
-"{C:inactive}(Current: {C:chips}+#1#{C:inactive} Chips)",
+"{C:inactive}(Currently {C:chips}+0{C:inactive} Chips)",
 ],
 
-    image_url: "img/joker/memoriam_photo.png",
+     image_url: "img/joker/memoriam_photo.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Schrödingers Cat",
+     name: "Schrödinger's Cat",
 
-    text: [
-"When a playing card is {C:attention}destroyed{}",
-"{C:green}#1# in #2#{} chance to add",
-"a copy of the card to your deck",
+     text: [
+"When a playing card is {C:attention}destroyed{},",
+"{C:green}1 in 3{} chance to add",
+"a copy of the card to deck",
 ],
 
-    image_url: "img/joker/schrodinger_cat.png",
+     image_url: "img/joker/schrodinger_cat.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Cashback Card",
+     name: "Cashback Card",
 
-    text: [
-"At the end of {C:attention}Boss Blind{}",
-"earn {C:gold}money{} equals to amount",
-"of {C:attention}consumables{} used this Ante",
-"{C:inactive}(Current: {C:gold}$#1#{C:inactive})",
+     text: [
+"At the end of a {C:attention}Boss Blind{},",
+"earn {C:gold}money{} equals to the amount",
+"of {C:attention}consumables{} used this {C:attention}Ante",
+"{C:inactive}(Currently {C:gold}$0{C:inactive})",
 ],
 
-    image_url: "img/joker/cashback_card.png",
+     image_url: "img/joker/cashback_card.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 {
-    name: "Raffle",
+     name: "Raffle",
 
-    text: [
-"At the end of shop",
-"{C:green}#1# in #2#{} chance to win {C:gold}$#3#",
-"Chance increases by {C:green}#4#{}",
-"per each purchase in the shop",
-"{s:0.8 C:red}Resets after rolling the prize",
+     text: [
+"At the end of each {C:attention}shop{},",
+"{C:green}0 in 20{} chance to win {C:gold}$20",
+"Chance increases by {C:green}1{}",
+"for each purchase in the {C:attention}shop",
+"{s:0.8, C:red}Resets after exiting the shop",
 ],
 
-    image_url: "img/joker/raffle.png",
+     image_url: "img/joker/raffle.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "IC Card",
+     name: "IC Card",
 
-    text: [
-"Gain {C:gold}$#1#{} to store in this card",
+     text: [
+"Gain {C:gold}$3{} to store in this Joker",
 "every time a hand is played",
-"When spending money the {C:attention}balances",
-"in this card are used first.",
-"{C:red}Only usable for #2# rounds",
-"{C:inactive}(Current: {C:gold}$#3#{C:inactive} {C:red}#4# Rounds left{C:inactive}){}",
+"When spending money, the {C:attention}balance",
+"in this Joker is spent first",
+"{C:red}Only usable for 9 rounds",
+"{C:inactive}(Currently {C:gold}$0{C:inactive}, {C:red}9 Rounds left{C:inactive}){}",
 ],
 
-    image_url: "img/joker/ic_card.png",
+     image_url: "img/joker/ic_card.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "2048",
+     name: "2048",
 
-    text: [
-"If played hand contains {C:attention}Pair{} of rank",
-"with power of two {C:attention}(2 4 8){}",
-"destroy the left one and gives all chips to another",
+     text: [
+"If played hand contains a {C:attention}Pair{} with",
+"rank of power of two {C:attention}(2, 4, 8){},",
+"destroy the left one and give all chips to the other",
 "{C:inactive}(Drag to rearrange){}",
 ],
 
-    image_url: "img/joker/j2048.png",
+     image_url: "img/joker/j2048.png",
 
-   rarity: "Common"
-  },
+    rarity: "Uncommon"
+   },
 {
-    name: "Inductor",
+     name: "Inductor",
 
-    text: [
-"For every played card with",
-"the same rank and suits",
-"{C:green}#1# in #2#{} chance to copy {C:attention}Enhancement{}",
-"{C:green}#1# in #3#{} chance to copy {C:attention}Edition{}",
-"{C:green}#1# in #4#{} chance to copy {C:attention}Seal{}",
+     text: [
+"For every played card with the same",
+"{C:attention}rank{} and suit{C:attention}{} as another played card:",
+"{C:green}1 in 4{} chance to copy {C:attention}Enhancement{}",
+"{C:green}1 in 8{} chance to copy {C:attention}Edition{}",
+"{C:green}1 in 12{} chance to copy {C:attention}Seal{}",
 ],
 
-    image_url: "img/joker/inductor.png",
+     image_url: "img/joker/inductor.png",
 
-   rarity: "Common"
-  },
+    rarity: "Rare"
+   },
 ]
-
-// works the same. 
 
 let auxiliary = [
   {
-    name: "Essence of Spades",
+     name: "Essence of Spades",
 
-    text: [
-"Adds {V:1}#2#{} onto",
-"{C:attention}#1#{} selected cards.",
+     text: [
+"Add {C:spades}Spade Seal{} to",
+"{C:attention}2{} selected cards",
+"in your hand",
 ],
 
-    image_url: "img/auxiliary/aux_spades.png",
+     image_url: "img/auxiliary/aux_spades.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Essence of Hearts",
+     name: "Essence of Hearts",
 
-    text: [
-"Adds {V:1}#2#{} onto",
-"{C:attention}#1#{} selected cards.",
+     text: [
+"Add {C:hearts}Heart Seal{} to",
+"{C:attention}2{} selected cards",
+"in your hand",
 ],
 
-    image_url: "img/auxiliary/aux_hearts.png",
+     image_url: "img/auxiliary/aux_hearts.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Essence of Clubs",
+     name: "Essence of Clubs",
 
-    text: [
-"Adds {V:1}#2#{} onto",
-"{C:attention}#1#{} selected cards.",
+     text: [
+"Add {C:clubs}Club Seal{} to",
+"{C:attention}2{} selected cards",
+"in your hand",
 ],
 
-    image_url: "img/auxiliary/aux_clubs.png",
+     image_url: "img/auxiliary/aux_clubs.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Essence of Diamonds",
+     name: "Essence of Diamonds",
 
-    text: [
-"Adds {V:1}#2#{} onto",
-"{C:attention}#1#{} selected cards.",
+     text: [
+"Add {C:diamonds}Diamond Seal{} to",
+"{C:attention}2{} selected cards",
+"in your hand",
 ],
 
-    image_url: "img/auxiliary/aux_diamonds.png",
+     image_url: "img/auxiliary/aux_diamonds.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Possessions",
+     name: "Possessions",
 
-    text: [
-"Adds {C:attention}Face Seal{} onto",
-"{C:attention}#1#{} selected cards.",
+     text: [
+"Add a {C:attention}Face Seal{}",
+"to {C:attention}2{} selected cards",
+"in your hand",
 ],
 
-    image_url: "img/auxiliary/aux_face.png",
+     image_url: "img/auxiliary/aux_face.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "+2",
+     name: "+2",
 
-    text: [
-"Adds {C:attention}#1#{} cards of any ranks",
-"with same suit of selected card to hand",
+     text: [
+"Creates a {C:attention}2{} card in",
+"your hand with a random",
+"{C:attention}rank{} and the same {C:attention}suit{}",
+"as the selected card",
 ],
 
-    image_url: "img/auxiliary/aux_plus_two.png",
+     image_url: "img/auxiliary/aux_plus_two.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Wild +4",
+     name: "Wild +4",
 
-    text: [
-"Adds {C:attention}#1#{} cards of any suits",
-"with same rank of selected card to hand",
+     text: [
+"Creates a {C:attention}4{} card in",
+"your hand with a random",
+"{C:attention}suit{} and the same {C:attention}rank{}",
+"as the selected card",
 ],
 
-    image_url: "img/auxiliary/aux_plus_four_wild.png",
+     image_url: "img/auxiliary/aux_plus_four_wild.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "The Past",
+     name: "The Past",
 
-    text: [
-"{C:red}+#1#{} discards this round",
+     text: [
+"{C:red}+3{} discards this round",
 ],
 
-    image_url: "img/auxiliary/aux_inst_disc.png",
+     image_url: "img/auxiliary/aux_inst_disc.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "The Present",
+     name: "The Present",
 
-    text: [
-"{C:attention}+#1#{} hand size this round",
+     text: [
+"{C:attention}+3{} hand size this round",
 ],
 
-    image_url: "img/auxiliary/aux_inst_hsize.png",
+     image_url: "img/auxiliary/aux_inst_hsize.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "The Future",
+     name: "The Future",
 
-    text: [
-"{C:blue}+#1#{} hands this round",
+     text: [
+"{C:blue}+3{} hands this round",
 ],
 
-    image_url: "img/auxiliary/aux_inst_hand.png",
+     image_url: "img/auxiliary/aux_inst_hand.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Seal Exchange",
+     name: "Seal Exchange",
 
-    text: [
-"Swaps {C:attention}seal{} between two selected cards",
+     text: [
+"Swap {C:attention}seals{} between",
+"{C:attention}2{} selected cards",
 ],
 
-    image_url: "img/auxiliary/aux_seal_move.png",
+     image_url: "img/auxiliary/aux_seal_move.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "All for One",
+     name: "All for One",
 
-    text: [
-"Selects up to {C:attention}#1#{} cards",
-"to converts into rank 1",
+     text: [
+"Converts rank of",
+"up to {C:attention}3{} selected",
+"cards to {C:attention}1{}",
 ],
 
-    image_url: "img/auxiliary/aux_conv_1.png",
+     image_url: "img/auxiliary/aux_conv_1.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "The Twenty-One",
+     name: "The Twenty-One",
 
-    text: [
-"Selects up to {C:attention}#1#{} cards",
-"with total ranks of {C:attention}21 or more{}.",
-"Destroys all selected cards and gets one",
+     text: [
+"Select up to {C:attention}5{} cards",
+"with total rank of {C:attention}21 or more{}.",
+"Destroys all selected cards and creates one",
 "{C:attention}rank 21{} card of a random suit.",
 ],
 
-    image_url: "img/auxiliary/aux_21.png",
+     image_url: "img/auxiliary/aux_21.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Monkey Paw",
+     name: "Monkey Paw",
 
-    text: [
-"Selects {C:attention}1{} card to {C:attention}upgrade edition{}",
-"Turns adjacent cards into {C:attention}Poison Card{}",
-"{C:inactive}(Loops around){}",
+     text: [
+"{C:purple}Upgrades {C:attention}1{} selected card's {C:attention}edition{}",
+"Turns adjacent cards into {C:attention}Poison Cards{}",
+"{C:inactive}(Loops around hand edges){}",
 ],
 
-    image_url: "img/auxiliary/aux_upgrade.png",
+     image_url: "img/auxiliary/aux_upgrade.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Heal Guardian",
+     name: "Heal Guardian",
 
-    text: [
-"Adds {C:attention}Heal Seal{} onto",
-"{C:attention}#1#{} selected cards.",
+     text: [
+"Add a {C:attention}Heal Seal{}",
+"to {C:attention}1{} selected",
+"card in your hand",
 ],
 
-    image_url: "img/auxiliary/aux_heal.png",
+     image_url: "img/auxiliary/aux_heal.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Heal Aura",
+     name: "Heal Aura",
 
-    text: [
-"Heal all {C:attention}Unhanced Cards{}",
-"holding in hand",
+     text: [
+"Heal all",
+"{C:red}Unhanced Cards{}",
+"in your hand",
 ],
 
-    image_url: "img/auxiliary/aux_heal_hand.png",
+     image_url: "img/auxiliary/aux_heal_hand.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Lottery",
+     name: "Lottery",
 
-    text: [
-"{C:green}#1# in #2#{} chance",
-"to win {C:gold}$#3#{}",
+     text: [
+"{C:green}1 in 4{} chance",
+"to win {C:gold}$20{}",
 ],
 
-    image_url: "img/auxiliary/aux_lottery.png",
+     image_url: "img/auxiliary/aux_lottery.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Blank Card",
+     name: "Blank Card",
 
-    text: [
+     text: [
 "Does nothing..?",
 ],
 
-    image_url: "img/auxiliary/aux_blank.png",
+     image_url: "img/auxiliary/aux_blank.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "Dark Matter",
+     name: "Dark Matter",
 
-    text: [
-"{C:dark_edition}+#1#{} Joker Slot",
+     text: [
+"Permanently gain",
+"{C:dark_edition}+1{} Joker slot",
 "{C:red}Cannot be Negative",
 ],
 
-    image_url: "img/auxiliary/aux_dark_matter.png",
+     image_url: "img/auxiliary/aux_dark_matter.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 {
-    name: "The Question",
+     name: "The Question",
 
-    text: [
-"Create {C:attention}#1#{} random",
-"{C:auxiliary}Auxiliary{} Card",
+     text: [
+"Creates up to {C:attention}2{}",
+"random {C:auxiliary}Auxiliary{} cards",
 "{C:inactive}(Must have room)",
 ],
 
-    image_url: "img/auxiliary/aux_random.png",
+     image_url: "img/auxiliary/aux_random.png",
 
-   rarity: "Auxiliary"
-  },
+    rarity: "Auxiliary"
+   },
 
 ]
 
 let consumables = [
   {
-    name: "The Time",
+     name: "Time",
 
-    text: [
-"Enhances {C:attention}#1#{}",
+     text: [
+"Enhances {C:attention}2{} ",
 "selected cards to",
 "{C:attention}Vintage Cards{}",
 ],
 
-    image_url: "img/consumable/trt_time.png",
+     image_url: "img/consumable/trt_time.png",
 
-   rarity: "Tarot"
-  },
+    rarity: "Tarot"
+   },
 {
-    name: "The Acorn",
+     name: "The Acorn",
 
-    text: [
-"Enhances {C:attention}#1#{}",
-"selected cards to",
-"{C:attention}Acorn Mark Cards{}",
+     text: [
+"Enhances {C:attention}1{} selected",
+"card into an",
+"{C:attention}Acorn Mark Card{}",
 ],
 
-    image_url: "img/consumable/trt_acorn.png",
+     image_url: "img/consumable/trt_acorn.png",
 
-   rarity: "Tarot"
-  },
+    rarity: "Tarot"
+   },
 {
-    name: "The Greed",
+     name: "Greed",
 
-    text: [
-"Enhances {C:attention}#1#{}",
+     text: [
+"Enhances {C:attention}2{} ",
 "selected cards to",
 "{C:attention}Promo Cards{}",
 ],
 
-    image_url: "img/consumable/trt_greed.png",
+     image_url: "img/consumable/trt_greed.png",
 
-   rarity: "Tarot"
-  },
+    rarity: "Tarot"
+   },
 {
-    name: "The Half",
+     name: "The Half",
 
-    text: [
-"Splits the {C:attention}integer-numbered rank{} cards",
-"into two cards with {C:attention}half a rank{} (rounded down)",
-"If the initial rank is {C:attention}odd{}",
-"adds one {C:attention}0.5 rank{} card {C:attention}of the same enhancement{} as well",
+     text: [
+"Splits {C:attention}1{} selected {C:attention}integer-numbered rank{} card",
+"into {C:attention}2{} cards with {C:attention}half the rank{} (rounded down).",
+"If the initial rank is {C:attention}odd{}, also adds {C:attention}1{}",
+"{C:attention}0.5 rank{} card of the same {C:attention}enhancement{}.",
 ],
 
-    image_url: "img/consumable/trt_half.png",
+     image_url: "img/consumable/trt_half.png",
 
-   rarity: "Tarot"
-  },
+    rarity: "Tarot"
+   },
 {
-    name: "The Knowledge",
+     name: "Knowledge",
 
-    text: [
+     text: [
 "Adds one random {C:attention}decimal-rank{} card",
-"of the selected suit to hand",
+"of {C:attention}1{} selected card's suit to hand",
 ],
 
-    image_url: "img/consumable/trt_knowledge.png",
+     image_url: "img/consumable/trt_knowledge.png",
 
-   rarity: "Tarot"
-  },
-  {
-    name: "Elixir of Life",
+    rarity: "Tarot"
+   },
+{
+     name: "Elixir of Life",
 
-    text: [
+     text: [
 "Heal all {C:red}Unhanced Cards{} in the deck",
 "Reduce money by half {C:inactive}(rounded up){}",
 ],
 
-    image_url: "img/consumable/spc_elixir.png",
+     image_url: "img/consumable/spc_elixir.png",
 
-   rarity: "Spectral"
-  },
+    rarity: "Spectral"
+   },
 {
-    name: "Vessel",
+     name: "Vessel",
 
-    text: [
-"Selects {C:attention}2{} card",
+     text: [
+"Select {C:attention}2{} cards,",
 "destroy the {C:attention}left{} card",
-"and gives corresponding {C:red}Suit Seal{}",
+"and give the corresponding {C:red}Suit Seal{}",
 "to the {C:attention}right{} card",
-"{C:inactive}(Drags to rearrange){}",
+"{C:inactive}(Drag to rearrange){}",
 ],
 
-    image_url: "img/consumable/spc_vessel.png",
+     image_url: "img/consumable/spc_vessel.png",
 
-   rarity: "Spectral"
-  },
+    rarity: "Spectral"
+   },
 {
-    name: "Conferment",
+     name: "Conferment",
 
-    text: [
+     text: [
 "Add a {C:attention}Face Seal{}",
-"to {C:attention}#1#{} random cards",
-"in your hand",
-"{C:red}-$#2#{} {C:inactive}(no debt limit){}",
+"to {C:attention}2{} random cards",
+"in your hand,",
+"{C:red}-$8{} {C:inactive}(no debt limit){}",
 ],
 
-    image_url: "img/consumable/spc_conferment.png",
+     image_url: "img/consumable/spc_conferment.png",
 
-   rarity: "Spectral"
-  },
+    rarity: "Spectral"
+   },
 {
-    name: "Amnesia",
+     name: "Amnesia",
 
-    text: [
-"Converts {C:attention}#1#{} random",
+     text: [
+"Converts {C:attention}3{} random",
 "cards in your hand",
 "to {C:attention}Rank 0{}",
 ],
 
-    image_url: "img/consumable/spc_amnesia.png",
+     image_url: "img/consumable/spc_amnesia.png",
 
-   rarity: "Spectral"
-  },
+    rarity: "Spectral"
+   },
 {
-    name: "Altar",
+     name: "Altar",
 
-    text: [
-"Destroy {C:attention}#1#{} random",
-"cards in your hand",
-"add {C:attention}#2#{} random {C:attention}Enhanced{}",
+     text: [
+"Destroy {C:attention}3{} random",
+"cards in your hand,",
+"add {C:attention}2{} random {C:attention}Enhanced{}",
 "{C:attention}21s{} to your hand",
 ],
 
-    image_url: "img/consumable/spc_altar.png",
+     image_url: "img/consumable/spc_altar.png",
 
-   rarity: "Spectral"
-  },
+    rarity: "Spectral"
+   },
 {
-    name: "Devil's Contract",
+     name: "Devil's Contract",
 
-    text: [
-"{C:purple}Upgrades {C:attention}#1#{} random",
+     text: [
+"{C:purple}Upgrades {C:attention}1{} random",
 "card in your hand",
-"converts {C:attention}#2#{} random",
-"cards in your hand into",
-"{C:attention}random {C:red}Unhancement{}",
+"Randomly {C:red}unhances {C:attention}3{}",
+"random cards in your hand",
 ],
 
-    image_url: "img/consumable/spc_contract.png",
+     image_url: "img/consumable/spc_contract.png",
 
-   rarity: "Spectral"
-  },
+    rarity: "Spectral"
+   },
 {
-    name: "Poltergeist",
+     name: "Poltergeist",
 
-    text: [
+     text: [
 "Shuffles all",
-"Jokers {C:dark_edition}edition{}",
+"Jokers' {C:dark_edition}editions{}",
 ],
 
-    image_url: "img/consumable/spc_poltergeist.png",
+     image_url: "img/consumable/spc_poltergeist.png",
 
-   rarity: "Spectral"
-  },
+    rarity: "Spectral"
+   },
 {
-    name: "Astral Projection",
+     name: "Astral Projection",
 
-    text: [
+     text: [
 "Swap {C:dark_edition}editions{} between",
 "the {C:attention}selected Joker{}",
-"and the one {C:attention}on the right{}",
-"{C:green}#1# in #2#{} chance that",
+"and the one {C:attention}to its right{}",
+"{C:green}1 in 4{} chance that",
 "one of the Jokers are {C:red}destroyed{}",
 ],
 
-    image_url: "img/consumable/spc_projection.png",
+     image_url: "img/consumable/spc_projection.png",
 
-   rarity: "Spectral"
-  },
+    rarity: "Spectral"
+   },
 {
-    name: "Siphon",
+     name: "Siphon",
 
-    text: [
-"Destroy a selected {C:attention}Joker{}",
-"with {C:dark_edition}edition{}",
-"Gives the {C:attention}Jokers {C:dark_edition}edition{} to",
-"{C:attention}#1#{} random card in your hand",
+     text: [
+"Destroys {C:attention}1{} selected {C:attention}Joker{}",
+"with an {C:dark_edition}edition{}",
+"Gives the {C:attention}Joker's {C:dark_edition}edition{} to",
+"{C:attention}4{} random card in your hand",
+"{C:inactive}({C:dark_edition}Negative{} excluded){}",
 ],
 
-    image_url: "img/consumable/spc_siphon.png",
+     image_url: "img/consumable/spc_siphon.png",
 
-   rarity: "Spectral"
-  },
+    rarity: "Spectral"
+   },
+
 
 ]
 
@@ -1471,8 +1492,8 @@ let card_modifications = [
      name: "Acorn Mark Card",
 
      text: [
-"Give {C:chips}+#1#{} chips when in hand",
-"Does not give any chips when scored",
+"Gives {C:chips}double amount{} of chips when in hand,",
+"does not give any chips when scored",
 ],
 
      image_url: "img/enhancement/enh_acorn.png",
@@ -1483,9 +1504,9 @@ let card_modifications = [
      name: "Vintage Card",
 
      text: [
-"Gains {C:chips}+#1#{} extra chips when scored",
-"{C:green}#2# in #3#{} chance to destroy itself",
-"{C:inactive}Chance increases by {C:green}+#4#{C:inactive} when scored{}",
+"Gains {C:chips}+3{} extra chips when scored",
+"{C:green}0 in 25{} chance to destroy itself",
+"{C:inactive}Chance increases by {C:green}+1{C:inactive} when scored{}",
 ],
 
      image_url: "img/enhancement/enh_vintage.png",
@@ -1496,9 +1517,9 @@ let card_modifications = [
      name: "Promo Card",
 
      text: [
-"Gives {C:gold}$#1#{} when in hand",
-"Gains {C:gold}+$#2#{} when scored",
-"{C:green}#3# in #4#{} chance to destroy when scored",
+"Gives {C:gold}$0{} while this card stays in hand",
+"Gains {C:gold}+$1{} when scored",
+"{C:green}1 in 8{} chance to destroy when scored",
 ],
 
      image_url: "img/enhancement/enh_promo.png",
@@ -1509,10 +1530,9 @@ let card_modifications = [
      name: "Slop Card",
 
      text: [
-"{C:chips}+#1#{} chips",
 "Always scored",
 "Random suit and rank after scored",
-"Current: {C:attention}#3#{} of {V:1}#2#{}",
+"Current: {C:attention}2{} of {C:hearts}Hearts{}",
 ],
 
      image_url: "img/enhancement/enh_slop.png",
@@ -1523,12 +1543,12 @@ let card_modifications = [
      name: "Resource Card",
 
      text: [
-"Has no rank always scored.",
-"Give {X:mult, C:white}X#1#{} Mult",
+"Has no rank, always scored.",
+"Gives {X:mult,C:white}X5{} Mult",
 "if the played hand has at least",
-"one card with {V:1}#2#{} suit",
-"{C:red}Destroy itself after scored{}",
-"{C:inactive}(Does not count another Resource Card){}",
+"one card with {C:attention}Corresponding Suit{}",
+"{C:red}Destroys itself after scored{}",
+"{C:inactive}(Does not count other Resource Cards){}",
 ],
 
      image_url: "img/enhancement/enh_resource.png",
@@ -1539,48 +1559,48 @@ let card_modifications = [
 
 let card_unhanced = [
   {
-    name: "Radioactive Card",
+     name: "Radioactive Card",
 
-    text: [
-"{C:chips}+#1#{} Chips no rank or suit",
-"When played {C:green}#2# in #3#{} chance to",
-"convert other played cards to {C:attention}Radioactive Card{}",
+     text: [
+"{C:chips}+13{} Chips, no rank or suit",
+"When played, {C:green}1 in 2{} chance to",
+"convert other played cards to {C:attention}Radioactive Cards{}",
 "",
-"When held in hand {C:green}#2# in #4#{} chance to give",
-"{X:mult, C:white}X#5#{} Mult otherwise give {X:mult, C:white}X#6#{} Mult",
+"When held in hand, {C:green}1 in 3{} chance to give",
+"{X:mult,C:white}X1.75{} Mult, otherwise gives {X:mult,C:white}X0.5{} Mult",
 ],
 
-    image_url: "img/enhancement/enh_radioactive.png",
+     image_url: "img/enhancement/enh_radioactive.png",
 
-   rarity: "Unhancement"
-  },
+    rarity: "Unhancement"
+   },
 {
-    name: "Biohazard Card",
+     name: "Biohazard Card",
 
-    text: [
-"{X:mult, C:white}X#1#{} Mult no rank or suit",
-"Lose {C:red}-$#2#{} on hand",
-"When discarded {C:green}#3# in #4#{} chance to turns one random",
+     text: [
+"{X:mult,C:white}X0.9{} Mult, no rank or suit",
+"Lose {C:red}-$1{} while this card stays in hand",
+"When discarded, {C:green}1 in 2{} chance to turn one random",
 "card in the deck into {C:attention}Biohazard Card{}",
 ],
 
-    image_url: "img/enhancement/enh_biohazard.png",
+     image_url: "img/enhancement/enh_biohazard.png",
 
-   rarity: "Unhancement"
-  },
+    rarity: "Unhancement"
+   },
 {
-    name: "Poison Card",
+     name: "Poison Card",
 
-    text: [
-"{C:red}-#1#{} chips",
-"Discarded {C:attention}Poison Cards{}",
-"goes back into the deck",
+     text: [
+"Gives {C:red}negative amount{} of Chips",
+"Goes back into deck",
+"when discarded",
 ],
 
-    image_url: "img/enhancement/enh_poison.png",
+     image_url: "img/enhancement/enh_poison.png",
 
-   rarity: "Unhancement"
-  },
+    rarity: "Unhancement"
+   },
 ]
 
 let card_seal = [
@@ -1637,7 +1657,7 @@ let card_seal = [
 
      text: [
 "This card also",
-"counts as {C:attention}face card{}",
+"counts as {C:attention}face{} card",
 ],
 
      image_url: "img/seal/seal_face.png",
@@ -1648,8 +1668,8 @@ let card_seal = [
      name: "Heal Seal",
 
      text: [
-"Removes {C:red}Unhancement{} from one of random cards held in hand when scored.",
-"",
+"Removes {C:red}Unhancement{} from one",
+"random card held in hand when scored.",
 "This card also cannot be {C:red}Unhanced{}.",
 ],
 
@@ -1667,9 +1687,9 @@ let decks = [
      text: [
 "Start run with the",
 "{C:auxiliary}Hardware Store{} voucher",
-"and one copy of {C:auxiliary}The Question.",
-"{C:auxiliary}Auxiliary Card{} can appear",
-"in the shop more often.",
+"and {C:attention}1{} copy of {C:auxiliary}The Question{},",
+"{C:auxiliary}Auxiliary Cards{} can appear",
+"in the {C:attention}shop{} more often",
 ],
 
      image_url: "img/deck/deck_util.png",
@@ -1683,7 +1703,7 @@ let decks = [
 "Start run with only",
 "{C:attention}rank 0-5{} cards",
 "and all {C:attention}decimal",
-"{C:attention}ranks{} inbetween",
+"{C:attention}ranks{} in between",
 ],
 
      image_url: "img/deck/deck_lowkey.png",
@@ -1731,8 +1751,9 @@ let shop_items = [
      name: "Hardware Store",
 
      text: [
-"{C:auxiliary}Auxiliary{} cards can",
-"spawn in the shop",
+"{C:auxiliary}Auxiliary{} cards",
+"can be purchased",
+"from the {C:attention}shop{}",
 ],
 
      image_url: "img/voucher/v_aux1.png",
@@ -1743,9 +1764,9 @@ let shop_items = [
      name: "Heavy Duty Tools",
 
      text: [
-"{C:auxiliary}Auxiliary{} card in the",
-"{C:attention}Expansion Pack{} can sometimes",
-"has {C:dark_edition}negative{} edition.",
+"{C:auxiliary}Auxiliary{} cards in",
+"{C:attention}Expansion Packs{} can",
+"sometimes be {C:dark_edition}Negative{}",
 ],
 
      image_url: "img/voucher/v_aux2.png",

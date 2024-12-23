@@ -35,6 +35,43 @@ main {
   font-size: 1.5rem;
 }
 
+.logo{
+	width: min(40rem, 100%);
+	heigjt:auto
+}
+
+.attention{
+	color: #ff9a00;
+}
+
+.inactive{
+	color: #ffffff99;
+}
+
+.danger{
+	color: #fe5f55;
+}
+
+a:link {
+  color: #009dff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #8867a5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eac058;
+  text-decoration: none;
+}
+
+a:active {
+  color: #fe5f55;
+  text-decoration: none;
+}
+
 h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -60,6 +97,11 @@ h1 {
 
   background-color: #374244;
 }
+
+.joker .text {
+  font-size: 1.25rem;
+}
+
 .joker img {
   height: 190px;
   image-rendering: pixelated;
