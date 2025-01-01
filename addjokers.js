@@ -1106,7 +1106,7 @@ let auxiliary = [
      name: "+2",
 
      text: [
-"Creates a {C:attention}2{} card in",
+"Creates {C:attention}2{} cards in",
 "your hand with a random",
 "{C:attention}rank{} and the same {C:attention}suit{}",
 "as the selected card",
@@ -1120,7 +1120,7 @@ let auxiliary = [
      name: "Wild +4",
 
      text: [
-"Creates a {C:attention}4{} card in",
+"Creates {C:attention}4{} cards in",
 "your hand with a random",
 "{C:attention}suit{} and the same {C:attention}rank{}",
 "as the selected card",
