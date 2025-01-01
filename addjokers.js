@@ -1504,7 +1504,7 @@ let card_modifications = [
      name: "Vintage Card",
 
      text: [
-"Gains {C:chips}+3{} extra chips when scored",
+"Gains {C:chips}+4{} extra chips when scored",
 "{C:green}0 in 25{} chance to destroy itself",
 "{C:inactive}Chance increases by {C:green}+1{C:inactive} when scored{}",
 ],
